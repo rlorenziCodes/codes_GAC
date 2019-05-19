@@ -42,7 +42,7 @@ pour des questions de vitesse d'exécution.
 Ensuite, j'ai été amené à trouver le nombre optimal de neuronnes à utiliser dans les couches. Pour cela, j'ai utilisé  
 la MAE comme métrique pour mesurer la performance du modèle. J'ai alors séparé le training set en deux (25% pour la 
 validation 75% pour l'apprentissage) et lancé une cross validation en calculant la MAE moyenne sur les partitions. La 
-MAE est minimale pour 64 neuronnes. Elle remonte pour 128 neuronnes, ce qui signifie qu'on est en sur apprentissage. 
+MAE est minimale pour 64 neuronnes. 
 J'ai enfin cherché le nombre optimal d'epochs, toujours avec le même principe. Pour cela, j'ai figé le réseau avec 2 
 niveaux cachés et 64 units. La meilleure MAE est obtenue pour 92 itération. Au delà, on commence à faire du sur - 
 apprentissage.
